@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            align-items: center;
+        }
+        nav>img{
+            width: 50px;
+        }
+        nav>div>a{
+           padding-right: 50px;
+            color: black;
+            text-decoration: none;
+        }
+        nav>button{
+            background-color: lightgreen;
+            color: black;
+            border-radius: 6px;
+            border: 0;
+            margin-left: 60%;
+            font-size: large;
+            padding: 10px 0px;
+        }
+        .container{
+            display: grid;
+            height: 98vh;
+            width: 100%;
+            grid-template-columns: repeat(2,1fr);
+            align-items:center ;
+            /* border: 2px solid black; */
+            padding: 10px;
+        }
+        
+       .words{
+            padding: 0 50px;
+            
+       }
+       .pic{
+        background-color: yellow;
+       }
+       .words>button{
+        background-color: black;
+        color: white;
+        padding: 0 20px;
+        font-size: larger;
+       }
+       .words>p{
+        color: gray;
+       }
+       .section3{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        background-color: brown;
+        justify-content: center;
+        padding: auto;
+       }
+       .section3> .sub-section> h1{
+        color: white;
+       }
+       .section3> .sub-section> p{
+        color: white;
+       }
+       .sub-section> img{
+        width: 150px;
+       }
+       .sub-section{
+        margin: 10px 50px;
+        text-align: center;
+       }
+       .sub-section>.heading>h1{
+        margin-top: 60px;
+       }
+       .sub-section-03-heading {
+        margin-top: 60px;
+      }
+/* assignment 4 style */
+       .section4{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        /* border: 1px solid black; */
+        
+       }
+       .section4>.sub-section>img{
+        text-align: center;
+        width: 100%;
+        height: 280px;
+        margin-top: -80px;
+       }
+       .section4>.sub-section{
+        border: 1px solid black;
+        border-radius: 30px;
+        overflow: hidden;
+       }
+       .section-04 .sub-section h1 {
+        margin: 0px;
+        padding: 5px 0px;
+        font-size: 30px;
+      }
+
+      .section-04 .sub-section p {
+        margin-top: 0px;
+        font-size: 15px;
+      }
+
+      .section-04 .words1 {
+        position: relative;
+        background-color: #fff;
+        margin-top: 0px;
+        top: -50px;
+        text-align: left;
+        border: 1px solid black;
+        border-radius: 0px 0px 25px 25px;
+      }
+/* assignment 5 style */
+        footer{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            background-color: brown;
+        }
+        footer>img{
+            width: 300px;
+            text-align: center;
+            padding: 25px;
+        }
+
+        
+        footer a {
+        display: block;
+        padding: 15px;
+        color:white;
+        text-decoration: none;
+      }
+        footer h1 {
+            color: white;
+        }
+        footer>p{
+            text-align: center;
+            grid-column:1/4 ;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-healthy-food-logo-design-with-chopstick-png-image_9016805.png" alt="logo">
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <button>Log in</button>
+    </nav>
+    <div class="container">
+        <div class="words">
+            <h1>Healthy Food</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum deserunt praesentium maxime porro impedit doloribus numquam id vitae velit neque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta expedita nihil non! Eveniet eos aut assumenda doloribus recusandae consectetur aliquam?</p>
+            <button>Read More</button>
+        </div>
+   
+        <div class="pic">
+          <img src="https://media.istockphoto.com/id/870173346/photo/healthy-food.jpg?s=612x612&w=0&k=20&c=g6ewhe862ZaSQevMw7VS-VJzwXXEHL6Gqpr-fEDx0jY=" alt="landingpage">
+        </div>
+    </div>
+    <section>
+        <div class="section3">
+            <div class="sub-section">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf" alt="subsection1">
+                <h1>No Minimum Order</h1>
+                <p>Order in for yourself or for the group, with no restrictions on order
+                    value</p>
+            </div>
+            <div class="sub-section">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_224,h_412/4x_Live_order_zzotwy" alt="subsection2">
+                <h1>Live Order Tracking</h1>
+                <p> Know where your order is at all times, from the restaurant to your
+                    doorstep</p>
+            </div>
+            <div class="sub-section">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn" alt="subsection3">
+                <h1 class="sub-section-03-heading">Lightning-Fast Delivery</h1>
+                <p>Experience Swiggy's superfast delivery for food delivered fresh & on
+                    time</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section4">
+            <div class="sub-section">
+                <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="firstpic">
+                <div class="words1"><h1>Order Online</h1>
+                <p>Stay Home and order to your Door Step</p></div>
+                
+            </div>
+            <div class="sub-section">
+                <img src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="2pic">
+                <div class="words1"><h1>On-site Dining</h1>
+                <p>View the city's favourite dining venues.</p></div>
+            </div>
+            <div class="sub-section">
+                <img src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="3pic">
+                <div class="words1">
+                    <h1>Nightlife & Clubs</h1>
+                    <p>Explore the city's top nightlife outlets & Book tables.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <img src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-healthy-food-logo-design-with-chopstick-png-image_9016805.png" alt="logo">
+        <div>
+            <h1>Navigation links</h1>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+        </div>
+        <div>
+            <h1>Learn More</h1>
+            <a href="#">Privacy</a>
+            <a href="#">Security</a>
+            <a href="#">Terms</a>
+            <a href="#">Sitemap</a>
+          </div>
+    
+          <p>&#169; Copyright All rights Reserved</p>
+
+    </footer>
+</body>
+</html>
